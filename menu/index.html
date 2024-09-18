@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+
+    <title>Kafe Toffie/Menu</title>
+</head>
+<body>
+     <!-- NAV BAR -->
+    
+     <nav class="navbar navbar-expand-lg">
+      <div class="container rounded-4">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/coffee-20_256.gif" width="80px" alt="brand" /> 
+          <p>Kafe Toffie</p>
+        </a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="../index.html">ANASAYFA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../franchising/index.html">FRANCHISING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../magaza/index.html">ONLINE MAGAZA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+       <!-- MENU -->
+
+       <section id="menu" class="py-5">
+      
+        <div class="container py-5 rounded-3">
+          <ul class="nav nav-pills mb-3 liste" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-sicak"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                Sıcak İçecekler
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-soguk"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Soğuk İçecekler
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-yemek"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Yiyecekler
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-tatli"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Tatlılar
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-sicak"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row row-gap-3">
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/amerikano.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/amerikano.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Americano</h6>   </a>
+               
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/espresso.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/espresso.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Espresso</h6> </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/filtrekahve.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/filtrekahve.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Filtre Kahve</h6> </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/latte.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/latte.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Latte</h6>    </a>
+              
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/kafemocha.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/kafemocha.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Mocha</h6>  </a>
+                
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/matchaLate.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/matchaLate.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Matcha Latte</h6>   </a>
+               
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/sicakCikolata.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/sicakCikolata.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Sıcak Çikolata</h6>    </a>
+              
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/turk kahvesi.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/turk kahvesi.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Türk Kahvesi</h6>      </a>
+            
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/cappicino.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/cappicino.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Cappuccino </h6>  </a>
+                
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/chaiTeaLatte.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/chaiTeaLatte.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Chai Tea Latte</h6>           </a>
+       
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/cortado.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/cortado.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Cortado</h6>     </a>
+             
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/sicak icecekler/1442021-Lotus-Latte-134450.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/sicak icecekler/1442021-Lotus-Latte-134450.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Lotus Latte</h6>  </a>
+                
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-soguk"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div class="row row-gap-3">
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/clekliLimonata.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/clekliLimonata.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Çilekli Limonata</h6> </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/coconatEsfrappe.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/coconatEsfrappe.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Coconut Esfrappa</h6>        </a>
+          
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/soguk icecekler/cranberryHibiskus.jpg"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/cranberryHibiskus.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Cranberry Hibiscus</h6>    </a>
+              
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/frappe.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/frappe.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Frappe</h6>           </a>
+       
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/ice-americano.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/ice-americano.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Ice Americano</h6>  </a>
+                
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/ice-latte.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/ice-latte.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Ice Latte</h6>   </a>
+               
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/iced capiçino.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/iced capiçino.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Ice Cappuccino</h6>  </a>
+                
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/iceMatcaTea.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/iceMatcaTea.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Ice Matcha latte</h6> </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/lime breeze.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/lime breeze.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Lime Breeze</h6>   </a>
+               
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/lotusLatte.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/lotusLatte.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Ice Lotus Latte</h6> </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/paragon lime.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/paragon lime.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Paragon Lime</h6>   </a>
+               
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/soguk icecekler/passionFruit.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/soguk icecekler/passionFruit.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Passion Fruit</h6>  </a>
+                
+                </div>
+              </div>
+            </div>
+            
+            <div
+              class="tab-pane fade"
+              id="pills-yemek"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div class="row row-gap-3">
+
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/yemekler/kruvasan.jpg"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/kruvasan.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Kruvasan</h6>
+                  </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/yemekler/3 peynirli kruvasan.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/3 peynirli kruvasan.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Üç Peynirli Kruvasan</h6>
+                   </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="../images/yemekler/annepogacasi.jpg">
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/annepogacasi.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Anne Poğaçası</h6>
+                    </a>
+                  
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/yemekler/cikolataliAcma.jpg"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/cikolataliAcma.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Çikolatalı Açma</h6>
+                   </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/yemekler/zeytinli.jpg"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/zeytinli.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Zeytinli Açma</h6> </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/yemekler/koreTavukluSandvic.jpg"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/koreTavukluSandvic.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Kore Tavuklu Sandiç</h6>
+                  </a>
+               
+                </div>
+            
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/yemekler/ksiMayaliHindiFümeli.jpg"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/ksiMayaliHindiFümeli.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Hindi Fümeli Sandviç</h6>
+                  </a>
+                  
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/yemekler/peynirlisimitSandvic.png"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/peynirlisimitSandvic.png"
+                      alt="Image"
+                    />
+                  <h6 class="fs-4 text-center">Peynirli Simit Sandviç</h6>
+                  </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/yemekler/1442021-Mozerella-Simit-114417.jpg"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/1442021-Mozerella-Simit-114417.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Mozerella Simit Sandviç</h6>
+                  </a>
+                
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/yemekler/otluMuffin.jpg"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/otluMuffin.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Otlu Muffin</h6>
+                  </a>
+               
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/yemekler/limonluKek.jpg"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/limonluKek.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Limonlu Kek</h6>
+                  </a>
+                 
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <a
+                    data-fslightbox
+                    href="../images/yemekler/yabanMersinliKek.jpg"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      width="100%"
+                      src="../images/yemekler/yabanMersinliKek.jpg"
+                      alt="Image"
+                    />
+                    <h6 class="fs-4 text-center">Yaban Mersinli Kek</h6>
+                  </a>
+                 
+                </div>
+              </div>
+            </div>
+
+
+            <div
+            class="tab-pane fade"
+            id="pills-tatli"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+            <div class="row row-gap-3">
+
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatli.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatli.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Orman Meyveli Pasta</h6>
+                    </a>
+            
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="../images/tatlilar/cikolataliekler.jpg">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/cikolataliekler.jpg"
+                    alt="Image"
+                  />
+
+                  <h6 class="fs-4 text-center">Çikolatalı Ekler</h6>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="../images/tatlilar/cilekliPuf.jpg">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/cilekliPuf.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Çilekli Puf Pasta</h6> </a>
+               
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatlilar/cilekliTart.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/cilekliTart.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Çilekli Tart</h6>
+                     </a>
+           
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatlilar/browni.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/browni.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Browni</h6>
+                 </a>
+               
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatlilar/cookie.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/cookie.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Levain Cookie</h6>
+                </a>
+                
+              </div>
+          
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatlilar/frambuazli-donut.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/frambuazli-donut.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Frambuazlı Donat</h6>   </a>
+             
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatlilar/kakaolu-donat.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/kakaolu-donat.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Kakaolu Donat</h6>    </a>
+            
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatlilar/izmirBomba.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/izmirBomba.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">İzmir Bomba</h6></a>
+                
+              </div>
+          
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatlilar/lotus-cheesecake.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/lotus-cheesecake.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Lotus Cheesecake</h6>          </a>
+      
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatlilar/Red-Velvet-Cheesecake.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/Red-Velvet-Cheesecake.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Red Velvet Cheesecake</h6>   </a>
+             
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatlilar/muzluRulo.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/muzluRulo.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Muzlu Rulo Pasta</h6> </a>
+               
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="../images/tatlilar/sanSebastian.jpg"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="../images/tatlilar/sanSebastian.jpg"
+                    alt="Image"
+                  />
+                  <h6 class="fs-4 text-center">Sansebastian Cheesecake</h6> </a>
+               
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="open-icon">
+        <div class="social-icons ">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-whatsapp"></i>
+        </div>
+     
+     
+      
+  </div>
+
+  
+  
+<footer>
+
+  <p>Copyright &copy Arife Tural</p>
+
+</footer>
+    
+
+   
+
+     
+
+     
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../lib/fslightbox.js"></script>
+</body>
+</html>

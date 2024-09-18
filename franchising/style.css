@@ -1,0 +1,110 @@
+/*! NAVBAR */
+.navbar{
+    background-color: transparent;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+.navbar .container{
+    background-color: #1c444d63;
+}
+
+.navbar-nav{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+    
+}
+.nav-link {
+    color: beige !important;
+  }
+
+  .nav-link:hover,.navbar-brand:hover{
+    color: #b46c32 !important;
+  }
+
+  .navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: beige;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  
+ .active{
+    color: #b46c32 !important;
+
+  }
+
+  .active:hover{
+    color: rgb(173, 173, 27) !important;
+  }
+
+
+  .navbar-toggler{
+    border: 2px solid beige;
+    
+  }
+
+
+  .first-img{
+    background-image: url(../images/fc.jpg);
+    background-position:bottom; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 50vh;
+    position: relative;
+  }
+
+  .first-img h1{
+    color: #58301c;
+    font-size: 5rem;
+    font-weight: bold;
+    position: absolute;
+    z-index: 3;
+    top: 80%;
+    left: 2%;
+
+  }
+
+  .form-container{
+    width: 60%;
+    margin: 2rem;
+    margin-left: 8rem;
+    
+  }
+
+  #coll{
+    width: 100%;
+  }
+
+  .open-icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align:justify;
+    color: beige;
+    background: linear-gradient(
+      to left ,
+    rgb(31, 23, 7),
+    rgba(4, 3, 1, 0.817),
+    hsl(191, 47%, 21%));
+  
+  }
+  
+  .social-icons{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  footer{
+  
+   color: black;
+   text-align: center;
+  
+  }
